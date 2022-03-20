@@ -2,18 +2,20 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import './index.css';
 
-class AddTasks extends React.Component {
+class AddTasks extends React.Component { // yeh add Task function hai!
     render() {
         return (
-        <div>Add a task</div>
+            <>
+                Add a task
+            </>
         )
     }
 }
 
-class TaskList extends React.Component {
+class TaskList extends React.Component {// yeh task list function hai!
     render() {
         return (
-        <div>{this.props.purpose}</div>
+        <div className={this.props.forStyling}>{this.props.purpose}</div>
         )
     }
 }
@@ -22,9 +24,17 @@ class App extends React.Component { //App banayi jo react ka component ha!
         const name = "Tapish"
         return(
             // <h1>Hello {name}</h1>
-            <>
-            <h1>Hello {name}</h1>
-                <AddTasks /><TaskList purpose="Tasks to do" /><TaskList purpose="Finished Tasks" /></>
+                <>
+            {/* <h1>Hello {name}</h1> */}
+                <div className="add-task">
+                    <AddTasks />
+                </div>
+                
+                <div className="task-lists">
+                    <TaskList purpose="Tasks to do" forStyling="todo" />{/*yaha hum jo bhi purpose me dalenegy vo uper function me props me jayenga and yaha pr comment curly brackets ke ander aaty hai! */}
+                    <TaskList purpose="Finished Tasks" forStyling="finished" />{/*parent component se child compoment tak imfo ese pochaty ha (attribute = uska naam)*/}
+                </div>
+                  </>
 
         );
     }
