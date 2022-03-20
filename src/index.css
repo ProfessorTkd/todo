@@ -60,12 +60,60 @@ body {
     border: 2px solid black;
 }
 
-.task-lists .finished {
+.task-lists .Finished-Tasks{
     height: 100%;
     width: 50%;
     border: 2px solid black;
 }
 
-.task-lists ul li * {
-    margin : 10px;
+
+.task-lists .list-container {
+    height: 70%;
+    width: 50%;
+    background-color: aquamarine ;
+    margin : 50px auto;
+    border-radius: 5px;
+  
+}
+
+.task-lists .list-container .title {
+    background-color: teal;
+    color: white;
+    border: 1px solid green;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.task-lists .list-container .content {
+    height: 90%;
+    width: 100%;
+    background-color: beige;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style: none; 
+    border-radius: 5px;
+   
+    font-size: 18px;
+}
+
+.task-lists .list-container .content div {
+    height: 50px;
+    padding: 10px 10px;
+    border-bottom: 1px solid teal;
+    background-color: aqua;
+     }
+     
+.task-lists .list-container .content div span {
+    margin: 0px 20px;
+}
+
+.task-lists .list-container .content div span.material-icons {
+    cursor: pointer;
+}
+.task-lists .list-container .content div span.material-icons:hover {
+    color: white;
 }
