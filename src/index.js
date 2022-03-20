@@ -5,9 +5,13 @@ import './index.css';
 class AddTasks extends React.Component { // yeh add Task function hai!
     render() {
         return (
-            <>
-                Add a task
-            </>
+            // <>
+            //     Add a task
+            // </>
+            <form>
+                <input type="text" />
+                <input type="button" value="ADD TASK" />
+            </form>
         )
     }
 }
