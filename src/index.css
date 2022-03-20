@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+
+
 body {
     margin: 0px;
     padding: 0px;
@@ -61,4 +64,8 @@ body {
     height: 100%;
     width: 50%;
     border: 2px solid black;
+}
+
+.task-lists ul li * {
+    margin : 10px;
 }
